@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>* {
+        box-sizing: border-box;
+    }
+    *::after{
+        box-sizing: border-box;
+    }
+    *::before{
+        box-sizing: border-box;
+    }
+    #buttons{
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    #buttons>button{
+        margin-bottom: 10px;
+    }
+    #demo{
+        position: fixed;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow-y: auto;
+    }
+    #demo::-webkit-scrollbar{
+        display: none;
+    }
+    #demo2{
+        display: none;
+    }
+    #html{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+    }</style>
+<!--demo是text文本-->
+<div id="demo"></div>
+<!--demo2是style样式-->
+<style id="demo2"></style>
+<div id="html">
+    <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose">
+            <div class="yuan"></div>
+        </div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="mouth">
+            <div class="up">
+                <div class="lip left"></div>
+                <div class="lip right"></div>
+            </div>
+            <div class="down">
+                <div class="yuan1">
+                    <div class="yuan2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+</div>
+<script src="/test.e98b79dd.js"></script>
+</body>
+</html>
