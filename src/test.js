@@ -1,6 +1,4 @@
 import string from './css'
-
-
 const player = {
     id: undefined,
     n: 1,
